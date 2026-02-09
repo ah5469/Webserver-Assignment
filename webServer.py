@@ -63,7 +63,7 @@ def webServer(port=13331):
       #Fill in start
       headerError = b"HTTP/1.1 404 Not Found\r\n" + b"Content-Type: text/html; charset=UTF-8\r\n\r\n"
       bodyError = b"<html><body><h1>404 Not Found</h1></body></html>"
-      connectionSocket.send(header_404 + body_404)
+      connectionSocket.send(headerError + bodyError)
       #Fill in end
 
 
